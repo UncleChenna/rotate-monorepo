@@ -1,6 +1,6 @@
 import React from "react";
-import { Flex } from "@chakra-ui/react";
 import { Metadata } from "next";
+import TodoPreview from "@/components/todo/TodoPreview";
 
 export const metadata: Metadata = {
   title: "Data Table"
@@ -8,10 +8,6 @@ export const metadata: Metadata = {
 
 export default function DataTable() {
   return (
-    <div>
-      <Flex justifyContent='center' bg='red'>
-        Data Table
-      </Flex>
-    </div>
+    <TodoPreview />
   );
 }
