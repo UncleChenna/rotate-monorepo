@@ -5,7 +5,8 @@ import type { Todo } from "@/services/types/todo.types";
 
 interface Props { data: Todo }
 
-export default function TodoCard({ data }: Props) {
+//this file ( chakra UI implementation of to do card ) is outdated and has been marked for deletion 
+export default function DeprecatedTodoCard({ data }: Props) {
   return (
     <Box
       borderRadius="lg"

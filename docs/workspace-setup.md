@@ -33,3 +33,32 @@
    cd next-config
    pnpm init
    cd ../../
+
+6. **Added Lighthouse configuration as a workspace package**  
+   A `lighthouse-config` package was added in the `packages` directory to manage Lighthouse settings across all Next.js apps in the workspace.
+
+   ```bash
+   mkdir packages/lighthouse-config
+   cd packages/lighthouse-config
+   pnpm init
+   cd ../../
+
+## Running the App Locally
+
+1. **Navigate to the root workspace directory**  
+   Ensure you are in the root of the workspace.
+
+   ```bash
+   cd rotate-monorepo
+
+2. **Install dependencies**  
+   Run the following command to install all dependencies and packages:
+
+   ```bash
+   pnpm install
+
+3. **Start the Next.js app in development mode**  
+   Use the following command to start the Next.js application in development mode:
+
+   ```bash
+   pnpm web dev

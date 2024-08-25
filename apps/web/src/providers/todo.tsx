@@ -7,16 +7,17 @@ import { Todo } from "@/services/types/todo.types";
 type Props = { children: React.ReactNode }
 
 const TodoProvider: React.FC<Props> = ({ children }) => {
-  const [todos, setTodos] = useState<Todo[]>([]) 
+  const [todos, setTodos] = useState<Todo[]>([]) // State for storing todos
 
+  // Fetch todos using React Query
   const query = useQuery({
     queryKey: ['todos'],
     queryFn: () => getTodos()
   })
 
   useEffect(() => {
-    if (query.data){
-      setTodos(query.data)
+    if (query.data) {
+      setTodos(query.data) // Update state when data is fetched successfully
     }
   }, [query.isSuccess, query.data])
 
@@ -27,7 +28,7 @@ const TodoProvider: React.FC<Props> = ({ children }) => {
         setTodos
       }}
     >
-      {children}
+      {children} {/* Provide context to children components */}
     </TodoContext.Provider>
   )
 }

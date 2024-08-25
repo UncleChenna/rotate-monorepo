@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3001 && pnpm panda --watch",
-    "build": "next build && pnpm panda --watch",
+    "dev": "next dev -p 3001",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "analyze": "ANALYZE=true next build",
     "run:lighthouse": "lhci collect",
     "build:lighthouse": "next build && next export",
     "lighthouse:desktop": "lhci collect --settings.preset=desktop",

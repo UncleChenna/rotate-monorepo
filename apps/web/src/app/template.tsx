@@ -27,8 +27,8 @@ export default function RootTemplate( {
                     fill
                     style={ { objectFit: 'cover' } }
                     sizes="100vw"
-                    quality={ 75 }
-                    priority
+                    quality={ 75 } // increases performance by setting the quality to a recommended quality
+                    priority // increases performance and makes the image load as quicly as possible
                 />
                 <Box
                     position="absolute"
@@ -36,7 +36,7 @@ export default function RootTemplate( {
                     left={ 0 }
                     width="100%"
                     height="100%"
-                    bg="rgba(0, 0, 0, 0.5)"
+                    bg="rgba(0, 0, 0, 0.5)" // add extra layer of shade to give background some overlay and increase accessibility
                     zIndex={ 2 }
                 />
                 <Box position="relative" zIndex={ 3 }>

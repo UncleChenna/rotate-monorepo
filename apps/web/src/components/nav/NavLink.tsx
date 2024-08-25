@@ -15,7 +15,7 @@ interface Props {
 
 export default function NavLink({ link }: Props) {
   const pathname = usePathname();
-  const isActive = pathname === link.href;
+  const isActive = pathname === link.href; // using path to detect active link
 
   return (
     <Link href={link.href}>

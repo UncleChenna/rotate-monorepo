@@ -4,6 +4,8 @@ import { Flex, Box } from "@chakra-ui/react";
 import type { NavigationLink } from "./NavLink";
 import NavLink from "./NavLink";
 
+
+// dynamic navigation links
 const links: NavigationLink[] = [
   {
     name: 'Home',
@@ -20,8 +22,9 @@ const links: NavigationLink[] = [
 ];
 
 export default function Nav() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false); // store user scroll in state
 
+  // detect user scroll
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -43,7 +46,7 @@ export default function Nav() {
       position="sticky"
       top={0}
       zIndex={100}
-      bg={isScrolled ? "blue.600" : "transparent"}
+      bg={isScrolled ? "blue.600" : "transparent"} // use scroll detection to display nav bg color
       transition="background-color 0.3s ease"
     >
       <Flex
