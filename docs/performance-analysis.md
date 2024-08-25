@@ -12,7 +12,7 @@ The Lighthouse audits were performed using Google Chrome's Lighthouse CI ( Comma
 - **Data Table Page** (`/data-table`)
 - **Form Page** (`/form`)
 
-Each page was tested with both mobile and desktop simulation to ensure a realistic assessment of the application's performance.
+Each page was tested with desktop simulation to ensure a realistic assessment of the application's performance.
 
 ## Key Metrics
 

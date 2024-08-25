@@ -86,7 +86,7 @@ export default function Form() {
 
           <Button
             type="submit"
-            colorScheme="teal"
+            colorScheme="gray"
             size="lg"
             width="full"
             borderRadius="full"

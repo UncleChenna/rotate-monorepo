@@ -34,3 +34,7 @@
 .custom-scrollbar {
   -ms-overflow-style: scrollbar; 
 }
+
+html, body {
+  font-display: swap
+}
