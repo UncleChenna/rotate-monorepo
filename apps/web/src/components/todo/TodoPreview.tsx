@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import { Box, Heading, Icon, SimpleGrid, Text } from "@chakra-ui/react";
 import { Todo } from "@/services/types/todo.types";
-import TodoCard from "./TodoCard";
+import TodoCard from "./ToDoCard";
 import { InfoIcon } from "@chakra-ui/icons";
 import { TodoContext } from "@/contexts/TodoContext";
 
